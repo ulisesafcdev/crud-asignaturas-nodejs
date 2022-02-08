@@ -4,8 +4,19 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css")
         title Inicio
     body 
         h1 Hola mundo desde pug
 
-        p= allData
+        table.table.table-bordered.table-dark
+            tr
+                th Materia 
+                th Modulos 
+                th Profesor
+            each i in allData 
+                tr 
+                    td= i.materia 
+                    td= i.modulos 
+                    td= i.profesor
+            

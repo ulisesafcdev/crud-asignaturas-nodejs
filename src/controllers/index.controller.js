@@ -45,7 +45,7 @@ controller.index = async (req, res) => {
         
         await connection();
         // console.log('Conectado a la base de datos...');
-        // await createMateria('base de datos 1', '3', 'lic. Alvin Yakitori').save();
+        await createMateria('base de datos 1', '3', 'lic. Alvin Yakitori').save();
         // await editMateria('62018a3bc42fc07fc550ee86', 'base de datos', '6', 'Prof. Alvin Yakitori');
         // await deleteMateria('62018a3bc42fc07fc550ee86');
         const allData = await materiasModel.find();
